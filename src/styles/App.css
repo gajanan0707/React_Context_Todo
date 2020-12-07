@@ -1,0 +1,73 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo {
+  width: 35rem;
+  height: 40rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+.todo-input {
+  border: none;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #560087;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+.todo-input:focus {
+  outline: none;
+}
+.todo-body {
+  margin-top: 2rem;
+  height: 80%;
+  overflow-y: auto;
+  list-style-type: none;
+  line-height: 4rem;
+}
+.todo-body li {
+  padding: 0.6rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-body li:hover {
+  cursor: pointer;
+}
+.todo-body li:hover span {
+  visibility: visible;
+}
+.todo-body li .material-icons {
+  visibility: hidden;
+}
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+.update {
+  background-color: #fa5500;
+}
+/* width */
+.todo-body::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+.todo-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+.todo-body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 27px;
+}
+/* Handle on hover */
+.todo-body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
